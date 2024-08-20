@@ -9,11 +9,15 @@
 </head>
 
 <body>
-    <div id="vue-app"></div>
+    <div id="vue-app">{{text}}</div>
 </body>
 <script>
     const vm = Vue.createApp({
-
+        data() {
+            return {
+                text: 'Start using Vue.js today!'
+            }
+        }
     })
     vm.mount('#vue-app')
 </script>
